@@ -4,10 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content = "width=device-width, initial-scale=1">
         <title>Rui Zhong</title>
+        <link rel="icon" type="image/png" href="images/p1.jpg">
         <link rel="stylesheet" href="css/all.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Passion+One&display=swap" rel="stylesheet">
       
 
     </head>
@@ -15,25 +17,27 @@
         <nav class="navbar navbar-default fixed-top navbar-expand-lg shadow-sm" id="nav-main">
             <div class="container ">
               <div class="navbar-header">
-                <a class="navbar-brand" href="#home">Rui Zhong</a>
+                <a class="navbar-brand" href="#home" style="font-family:'Archivo Black',sans-serif;">Rui Zhong</a>
               </div>
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fas fa-bars"></i></span>
+              </button>
               <div class="collapse navbar-collapse" id="navbar">
               <ul class="nav navbar-nav" >
                 <li class="nav-item "><a class ="nav-link" href="#home">Home</a></li>
                 <li class="nav-item"><a class ="nav-link" href="#experience">Experience</a></li>
                 <li class="nav-item"><a class ="nav-link" href="#projects">Projects</a></li>
                 <li class="nav-item"><a class ="nav-link" href="#skills">Skills</a></li>
+                
+
               </ul>
-              
+              <div class="ml-auto">
+               <a class="mail" href="mailto:zhongrui1995@gmail.com"><i class="far fa-envelope"></i></a></li>
+                <a class="linkedin" href="https://www.linkedin.com/in/rui-rachel-zhong-136821125/"><i class="fab fa-linkedin"></i></a>
+                <a class="ins" href="https://www.instagram.com/rzhongms/"><i class="fab fa-instagram"></i></a>
               </div>
-              
-            <div class="contact">
-           
-            <a href="#home"><i class="far fa-envelope"></i></a>
-            <a href="#home"><i class="fab fa-linkedin"></i></a>
-            <a href="#home"><i class="fab fa-instagram"></i></a>
-            
-            </div>
+              </div>
+          
             </div>
         </nav>
         <div >
@@ -46,7 +50,7 @@
                     
                     <div class="profile-title">
                       <br>
-                        <h3 itemprop="job">Student</h3>
+                        <h3 itemprop="job" style="font-weight: 600 ;font-family:'Archivo Black',sans-serif;color:#ac3b61;">Student</h3>
                     </div>
                 </div>
             </div>
@@ -57,12 +61,12 @@
                   machine learning and natural language processing techniques to solve economic and finance-related questions. 
                 </p>
                 <h1>education</h1>
-                <p>M.S. in Quantitative Finance</p>
-                <p>Gabelli School of Business, Fordham University</p>
-                <br>
-                <p>B.S. in Mathematic Finance & Economics</p>
-                <p>Trinity University </p>
-                <br>   
+                <p><i class="fas fa-graduation-cap"></i> M.S. in Quantitative Finance</p>
+                <p>Gabelli School of Business, <a href = "https://www.fordham.edu/" style="color:#ac3b61;">Fordham University</a></p>
+                
+                <p><i class="fas fa-graduation-cap"></i> B.S. in Mathematic Finance & Economics</p>
+                <p><a href = "https://new.trinity.edu/" style="color:#ac3b61;">Trinity University</a></p>
+                 
               
                 </div>
             </div>
@@ -77,16 +81,19 @@
                 <h1>Experience</h1>
               </div>
               <div class="col-12 col-lg-8">
+                <div id="accordion">
                 <div class="card" style="max-width: 36rem;">
                   <div class="card-header" id="headingOne">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Graduate Assistant of Computational Finance
-                    </button>
-                    <a class="float-right">Spring 2020</a>
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne" aria-expanded="false">
+                      Graduate Assistant of Computational Finance 
+                    </button> 
+                   
                   </div>
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                   <div class="card-body">
-                    <h5 class="card-title">Gabelli School of Business Finance Department<a class="float-right">New York, NY</a></h5>
+                    <h5 class="card-title">Gabelli School of Business Finance Department<div class="date">Spring 2020</div></h5>
+                    <div class="place">New York, NY</div>
+                    <br>
                     <p class="card-text">Assisted mentor with quantifying banks' engagement with community and examine the effect of bank's social capital on bank values</p>
                     <p class="card-text">Researched on quantifying firm's corporate climate risk and utilize the measure to predict changes in the firm's volatility and implied volatility, capital expenditures, and employment</p>
                     <p class="card-text">Managed 10G+ data obtained from API services using Python and JSON</p>
@@ -97,14 +104,16 @@
                 <br>
                 <div class="card" style="max-width: 36rem;">
                   <div class="card-header" id="headingTwo">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
-                      Portfolio Manager
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Portfolio Manager    
                     </button>
-                    <a class="float-right">2017-2018</a>
+                    
                   </div>
-                    <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo">
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                     <div class="card-body">
-                    <h5 class="card-title">Trinity University Student Managed Fund<a class="float-right">San Antonio, TX</a></h5>
+                    <h5 class="card-title">Trinity University Student Managed Fund<div class="date">2017-2018</div></h5>
+                    <div class="place">San Antonio, TX</div>
+                    <br>
                     <p class="card-text">Analyzed and interpreted financial market data for potential trading opportunities using statistical techniques and provided weekly reports</p>
                     <p class="card-text">Enhanced data collection procedures to include relevant information for investment purpose</p>
                     <p class="card-text">Performed qualitative analysis on market news and companies’ earnings calls and maintained responsibility for investment decisions on trading stocks which led to 10% YTD return</p>
@@ -115,20 +124,22 @@
                 <br>
                 <div class="card" style="max-width: 36rem;">
                   <div class="card-header" id="headingThree">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                       Assets Management Intern
                     </button>
-                    <a class="float-right">Summer 2016</a>
                   </div>
-                  <div id="collapseThree" class="collapse show" aria-labelledby="headingThree">
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                   <div class="card-body">
-                    <h5 class="card-title">Guohai Liangshi Futures CO., LTD.<a class="float-right">Hangzhou, China</a></h5>
+                    <h5 class="card-title">Guohai Liangshi Futures CO., LTD.  <div class="date">Summer 2016</div></h5>
+                    <div class="place">Hangzhou, China</div>
+                    <br>
                     <p class="card-text">Maintained client support operation including portfolio establishment, purchasing and redeeming funds, clearing accounts, and writing reports of operation status</p>
                     <p class="card-text">Communicated with fund custodians to ensure portfolio structures meet clients’ needs</p>
                     <p class="card-text">Managed $75,000 money market fund portfolio and performed momentum trading strategies to achieve a 5% return</p>
                   </div>
                 </div>
                 </div>
+              </div>
 
               </div>
             </div>
@@ -144,13 +155,13 @@
                   <div class="col-12 col-lg-8">
                     <div class="card" style="max-width: 36rem;">
                       <div class="card-body">
-                        <h5 class="card-title"><a href="project1.html">NLP & Assets Management Project</a><a class="float-right">Fall 2019</a></h5>
+                        <h5 class="card-title"><a href="project1.html" style="color:#ac3b61;">NLP & Assets Management Project</a><a class="date">Fall 2019</a></h5>
                       </div>
                     </div>
                     <br>
                     <div class="card" style="max-width: 36rem;">
                       <div class="card-body">
-                        <h5 class="card-title"><a href="project2.html">SVM Portfolio Management Project</a><a class="float-right">Fall 2018</a></h5>
+                        <h5 class="card-title"><a href="project2.html" style="color:#ac3b61;">SVM Portfolio Management Project</a><a class="date">Fall 2018</a></h5>
                       </div>
                     </div>
                   </div>
@@ -165,7 +176,7 @@
           </div>
           <div class="col-12 col-lg-8">
             <div class="coding">
-              <h3>Coding</h3>
+              <h3>CODING</h3>
               <h4>Python <a class="float-right"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a></h4>
               <h4>Matlab   <a class="float-right"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a></h4>
               <h4>R    <a class="float-right"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></a></h4>
@@ -173,10 +184,10 @@
               <h4>C++   <a class="float-right"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></a></h4>
             </div>
             <div class="lang">
-              <h3>language</h3>
+              <h3>LANGUAGE</h3>
               <h4>Chinese (Native) <a class="float-right"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a> </h4>
               <h4>English <a class="float-right"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a> </h4>
-              <h4>Japanese <a class="float-right"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></a> </h4>
+              <h4>Japanese (N2) <a class="float-right"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></a> </h4>
             </div>
           </div>
           </div>

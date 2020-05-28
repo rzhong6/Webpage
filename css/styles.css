@@ -6,16 +6,26 @@ html {
     scroll-behavior: smooth;
   }
 body{
-    font-family:"Noto Sans",sans-serif;
-    background-color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#eee2dc;
     position:relative;
 }
 h1{
     text-transform:uppercase;
-    font-weight:300;
+    font-weight:200;
+    font-family:"Archivo Black",sans-serif;
+    color:#ac3b61;
+}
+h3{
+  color:#ac3b61;
+  font-weight:600;
+}
+h4{
+  color:#123c69;
 }
 p {
   font-size:15px;
+  color:#123c69;
 }
 h5 {
   font-size:15px;
@@ -28,9 +38,12 @@ h5 {
     margin:0;
     border-radius:50%;
     
+    
 }
 .portrait img{
     display:block;
+    border-color:#ac3b61;
+    border-width:thick;
     
 }
 .portrait img{
@@ -59,15 +72,8 @@ h5 {
     margin-right: 15px;
     margin-left: 15px;
 }
-.home-section {
-    background-color: #fff;
-    padding: 110px 0;
-    animation: intro .3s both;
-    animation-delay: .15s;
-}
-.home-section:first-of-type{
-    padding-top:200px;
-}
+
+
 .container{
     width: 100%;
     padding-right: 15px;
@@ -98,13 +104,17 @@ ul.edu{
 
 }*/
 .navbar {
-  background-color: white;
+  background-color: #edc7b7;
+  
 }
 .navbar .navbar-brand{
   font-size:30px;
   font-weight: 600;
   font-family: inherit;
-  color: #007bff;
+  color: #ac3b61;
+}
+.nav-link{
+  color:#ac3b61;
 }
 .nav-item {
   margin:20px;
@@ -113,22 +123,78 @@ ul.edu{
 .navbar-default .navbar-nav >.nav-item> a.nav-link.active, 
 .navbar-default .navbar-nav >.nav-item> a.nav-link.active:hover,
  .navbar-default .navbar-nav >.nav-item> a.nav-link.active:focus {
-  color: black;
+  color: #123c69;
 }
 
 .fa-envelope{
   font-size:24px;
   margin:20px;
+  
+}
+.mail {
+  color:#123c69;
+}
+.navbar-default .ml-auto>a.mail.active,
+.navbar-default .ml-auto>a.mail.active:hover,
+.navbar-default .ml-auto>a.mail.active:focus{
+  color:#ac3b61;
+}
+.linkedin{
+  color:#123c69;
+}
+.navbar-default .ml-auto>a.linkedin.active,
+.navbar-default .ml-auto>a.linkedin.active:hover,
+.navbar-default .ml-auto>a.linkedin.active:focus{
+  color:#ac3b61;
 }
 .fa-linkedin{
   font-size:24px;
   margin:20px;
 }
+.ins{
+  color:#123c69;
+}
+.navbar-default .ml-auto>a.ins.active,
+.navbar-default .ml-auto>a.ins.active:hover,
+.navbar-default .ml-auto>a.ins.active:focus{
+  color:#ac3b61;
+}
 .fa-instagram{
   font-size:24px;
   margin:20px;
+  
 }
-
+.date{
+  color:#123c69;
+  float:right;
+  display:inline;
+}
+.place{
+  float:right;
+  color:#123c69;
+  font-size:15px;
+}
+.card{
+  border:none;
+}
+.card-body{
+  background-color:#bab2b5;
+}
+.btn-link{
+  color:#ac3b61;
+}
+.card-header{
+  background-color:#edc7b7;
+}
+.card-title{
+  color:#123c69;
+}
+.lang {
+  margin-top:20px;
+}
+#projects.home-section>.container>.row>.col-12.col-lg-8>.card>.card-body{
+  background-color:#edc7b7;
+}
 /*********Large Device Only********/
 @media (min-width:1200px){
     .navbar>.container .navbar-brand{
@@ -138,16 +204,73 @@ ul.edu{
         flex: 0 0 33.33333333%;
         max-width: 33.33333333%;
     }
+    .home-section:first-of-type{
+      padding-top:200px;
+  }
+  .home-section {
+    background-color: #eee2dc;
+    padding:110px 0;
+    animation: intro .3s both;
+    animation-delay: .15s;
+}
 }
 /*********Medium Device Only********/
 @media (min-width:992px) and (max-width:1199px){
-
+  .navbar>.container .navbar-brand{
+    margin-left:100px;
+}
+.col-lg-4 {
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
+}
+.home-section:first-of-type{
+  padding-top:200px;
+}
+.home-section {
+background-color: #eee2dc;
+padding:110px 0;
+animation: intro .3s both;
+animation-delay: .15s;
+}
 }
 /*********Small Device Only*********/
 @media (min-width:768px) and (max-width:991px){
-   
+  
 }
 /*********Extra Small Device Only*******/
-@media (max-width:767 px){
-    
+@media (max-width:767px){
+
+   .home-section:first-of-type{
+     padding-top:150px;
+   }
+   .home-section{
+     padding:60px 0;
+   }
+   .fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+}
+   .home-section {
+    background-color: #eee2dc;
+    padding: 110px 0;
+    animation: intro .3s both;
+    animation-delay: .15s;
+}
+ 
+  .card-header{
+    text-align:center;
+  }
+  h1{
+    font-size:30px;
+  }
+  .place{
+    float:none;
+  }
+  .date{
+    float:none;
+    display:block;
+  }
+  h5.card-title{
+    font-weight:200;
+  }
 }
